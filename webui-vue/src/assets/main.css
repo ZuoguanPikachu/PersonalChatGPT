@@ -1,0 +1,91 @@
+@import './base.css';
+
+.button-icon-button {
+    background-color: var(--white);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    cursor: pointer;
+    transition: all .3s ease;
+    overflow: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    outline: none;
+    border: none;
+    color: var(--black)
+}
+
+.button-icon-button[disabled] {
+    cursor: not-allowed;
+    opacity: .5
+}
+
+.button-icon-button.button-primary {
+    background-color: var(--primary);
+    color: #fff
+}
+
+.button-icon-button .button-primary path {
+    fill: #fff!important
+}
+
+.button-icon-button.button-danger {
+    color: rgba(255,0,0,.8);
+    border-color: rgba(255,0,0,.5);
+    background-color: rgba(255,0,0,.05)
+}
+
+.button-icon-button.button-danger:hover {
+    border-color: red;
+    background-color: rgba(255,0,0,.1)
+}
+
+.button-icon-button.button-danger path {
+    fill: red!important
+}
+
+.button-icon-button:focus,.button-icon-button:hover {
+    border-color: var(--primary)
+}
+
+.button-shadow {
+    box-shadow: var(--card-shadow)
+}
+
+.button-border {
+    border: var(--border-in-light)
+}
+
+.button-icon-button-icon {
+    width: 16px;
+    height: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.button-icon-button-text {
+    font-size: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+.button-icon-button-text:not(:first-child) {
+    margin-left: 5px
+}
+
+.clickable {
+    cursor: pointer
+}
+
+.clickable:hover {
+    filter: brightness(.9)
+}
+
+.clickable:focus {
+    filter: brightness(.95)
+}
